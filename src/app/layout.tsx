@@ -1,5 +1,5 @@
-import Container from './components/container'
-import NavBar from './components/navbar'
+import Container from '../components/container'
+import NavBar from '../components/navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 

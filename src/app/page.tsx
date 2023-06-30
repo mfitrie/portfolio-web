@@ -1,6 +1,7 @@
+import MainPage from "../components/main-page";
 
 export default function Home() {
   return (
-    <div className="h-screen flex items-center">Hello</div>
+    <MainPage />
   )
 }
