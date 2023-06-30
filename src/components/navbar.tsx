@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NavBar(){
     return (
-        <nav className="bg-white h-12 w-screen fixed flex items-center">
+        <nav className="bg-white h-16 w-screen fixed flex items-center shadow-lg">
             <div className="container mx-auto px-4 flex flex-row justify-between">
             <h1 className="font-bold text-lg">Developer 1.0</h1>
             <ul className="flex flex-row gap-8">
