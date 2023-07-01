@@ -7,6 +7,7 @@ import GithubIcon from "./icons/github"
 import LinkedinIcon from "./icons/linkedin"
 import TwitterIcon from "./icons/twitter"
 import styles from '@/components/css/main-background.module.css';
+import TypewriterWord from "./typewriter-word"
 
 // _api.setFetch(fetch);
 
@@ -29,12 +30,14 @@ export default function MainPage(){
                 <div className="flex flex-col gap-3">
                     <h1 className="text-5xl text-blue-950 font-bold">Hi There,</h1>
                     <h1 className="text-5xl text-blue-950 font-bold">Im <span className="text-orange-500">Muhammad Fitrie</span> </h1>
-                    <h2 className="text-2xl font-semibold">
-                        I am <span className="text-orange-700">Fullstack Developer</span>
-                    </h2>
+                    <TypewriterWord />
                 </div>
                 <div>
-                    <button className="bg-green-500 rounded-lg px-4 py-2 flex gap-1 items-center text-white shadow-xl duration-500 ease-in-out hover:bg-green-700 hover:transition-all hover:gap-3">
+                    <button 
+                        className="rounded-lg px-4 py-2 flex gap-1 items-center text-white shadow-xl duration-500 ease-in-out hover:bg-green-700 hover:transition-all hover:gap-3" 
+                        title="About me!"
+                        style={{backgroundColor: '#3498db'}}
+                    >
                         About me!
                         <ArrowDown size="20"/>
                     </button>
