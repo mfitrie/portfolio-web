@@ -6,27 +6,45 @@ import ArrowDown from "./icons/arrow-down"
 import GithubIcon from "./icons/github"
 import LinkedinIcon from "./icons/linkedin"
 import TwitterIcon from "./icons/twitter"
+import styles from '@/components/css/main-background.module.css';
 
 // _api.setFetch(fetch);
 
 export default function MainPage(){
     return (
-        <main className="h-screen grid grid-cols-2">
+        <main className="h-screen grid grid-cols-2 relative">
+            <ul className={styles.circles}>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
             <div className="h-full px-10 flex flex-col items-start justify-center gap-6">
                 <div className="flex flex-col gap-3">
                     <h1 className="text-5xl text-blue-950 font-bold">Hi There,</h1>
                     <h1 className="text-5xl text-blue-950 font-bold">Im <span className="text-orange-500">Muhammad Fitrie</span> </h1>
-                    <h2 className="text-lg font-semibold">I am Fullstack Developer</h2>
+                    <h2 className="text-2xl font-semibold">
+                        I am <span className="text-orange-700">Fullstack Developer</span>
+                    </h2>
                 </div>
                 <div>
-                    <button className="bg-green-500 rounded-lg px-4 py-2 flex gap-1 items-center text-white shadow-xl hover:bg-green-700 hover:transition-all hover:gap-3">
-                        Click me!
+                    <button className="bg-green-500 rounded-lg px-4 py-2 flex gap-1 items-center text-white shadow-xl duration-500 ease-in-out hover:bg-green-700 hover:transition-all hover:gap-3">
+                        About me!
                         <ArrowDown size="20"/>
                     </button>
                 </div>
                 <div className="flex gap-6 mt-7">
                     <Link
                         href="https://www.linkedin.com/in/muhammad-fitrie-a88472199/"
+                        target="_blank"
+                        title="Linkedin"
+                        className="drop-shadow-lg"
                     >
                         <span className="w-16 h-16 flex justify-center items-center rounded-full" style={{backgroundColor: "#2c3e50"}}>
                                 <LinkedinIcon size="30" hexColor="#3498db"/>
@@ -34,6 +52,9 @@ export default function MainPage(){
                     </Link>
                     <Link
                         href="https://github.com/mfitrie"
+                        target="_blank"
+                        title="GitHub"
+                        className="drop-shadow-lg"
                     >
                         <span className="w-16 h-16 flex justify-center items-center rounded-full" style={{backgroundColor: "#2c3e50"}}>
                             <GithubIcon size="30" hexColor="#3498db"/>
@@ -41,6 +62,9 @@ export default function MainPage(){
                     </Link>
                     <Link
                         href="https://twitter.com/_mfitrie_"
+                        target="_blank"
+                        title="Twitter"
+                        className="drop-shadow-lg"
                     >
                         <span className="w-16 h-16 flex justify-center items-center rounded-full" style={{backgroundColor: "#2c3e50"}}>
                             <TwitterIcon size="30" hexColor="#3498db"/>
