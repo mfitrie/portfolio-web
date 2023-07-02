@@ -8,6 +8,7 @@ import LinkedinIcon from "./icons/linkedin"
 import TwitterIcon from "./icons/twitter"
 import styles from '@/components/css/main-background.module.css';
 import TypewriterWord from "./typewriter-word"
+import Button from "./Button"
 
 // _api.setFetch(fetch);
 
@@ -33,14 +34,18 @@ export default function MainPage(){
                     <TypewriterWord />
                 </div>
                 <div>
-                    <button 
+                    {/* <button 
                         className="rounded-lg px-4 py-2 flex gap-1 items-center text-white shadow-xl duration-500 ease-in-out hover:bg-green-700 hover:transition-all hover:gap-3" 
                         title="About me!"
                         style={{backgroundColor: '#3498db'}}
                     >
                         About me!
                         <ArrowDown size="20"/>
-                    </button>
+                    </button> */}
+                    <Button>
+                        About me!
+                        <ArrowDown size="20"/>
+                    </Button>
                 </div>
                 <div className="flex gap-6 mt-7">
                     <Link
