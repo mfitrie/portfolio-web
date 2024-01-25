@@ -1,3 +1,5 @@
+"use client"
+
 // import Image from "next/image";
 // import { _api, Icon } from '@iconify/react';
 // import fetch from 'cross-fetch';
@@ -10,6 +12,7 @@ import styles from '@/components/css/main-background.module.css';
 import TypewriterWord from "./typewriter-word"
 import Button from "./Button"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 // _api.setFetch(fetch);
 
@@ -89,7 +92,11 @@ export default function MainPage(){
                         width="300"
                         height="300"
                     /> */}
-                    <div className="w-96 h-96 rounded-full overflow-hidden drop-shadow-xl ">
+                    <motion.div 
+                        className="w-96 h-96 rounded-full overflow-hidden drop-shadow-xl"
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                    >
                         <Image
                             className="object-cover w-full h-full"
                             src="/Fitrie-casual.jpg"
@@ -97,7 +104,7 @@ export default function MainPage(){
                             width={721}
                             height={1280}
                         />
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </main>

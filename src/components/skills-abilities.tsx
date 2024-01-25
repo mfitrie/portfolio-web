@@ -1,5 +1,6 @@
 "use client"
 import { Icon } from "@iconify/react"
+import { motion } from "framer-motion"
 
 
 export default function SkillsAbilities(){
