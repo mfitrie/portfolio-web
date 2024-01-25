@@ -26,7 +26,7 @@ export default function AboutMe(){
                 </h2>
             </div>
             <div className="row-span-5 grid grid-cols-2 xs:grid-cols-1 md:grid-cols-2">
-                <div className="flex justify-center items-center xs:hidden md:block">
+                <div className="justify-center items-center xs:hidden md:flex">
                     <Image
                         className="h-4/6 w-2/6 rounded-lg drop-shadow-2xl cursor-pointer grayscale hover:grayscale-0"
                         width={200}

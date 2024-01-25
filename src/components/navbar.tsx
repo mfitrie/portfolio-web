@@ -2,6 +2,7 @@ import Link from "next/link";
 
 export default function NavBar(){
     return (
+        // TODO: add navigation menu using daisyui
         <nav className="bg-white h-16 w-screen fixed flex items-center shadow-lg z-10 xs:hidden md:flex">
             <div className="container mx-auto px-4 flex flex-row justify-between">
             <h1 className="font-bold text-lg">Developer 1.0</h1>
