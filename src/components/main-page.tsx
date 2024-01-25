@@ -46,7 +46,9 @@ export default function MainPage(){
                         About me!
                         <ArrowDown size="20"/>
                     </button> */}
-                    <Button>
+                    <Button
+                        handleOnClick={() => {}}
+                    >
                         About me!
                         <ArrowDown size="20"/>
                     </Button>
