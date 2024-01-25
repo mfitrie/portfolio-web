@@ -12,7 +12,8 @@ export default function ContactPage(){
     return (
         <section id="contact-page" className="grid grid-rows-6 md:h-screen">
             <div className="row-span-1 flex justify-center items-center">
-                <h2 className="text-4xl font-bold flex gap-2">
+                <h2 className="text-4xl font-bold flex gap-2 items-center">
+                    <Icon icon="ri:shake-hands-line"/>
                     Get In Touch
                 </h2>
             </div>

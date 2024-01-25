@@ -7,7 +7,8 @@ export default function SkillsAbilities(){
     return (
         <section id="skills-abilities" className="grid grid-row-6 md:h-screen">
             <div className="row-span-1 flex justify-center items-center">
-                <h2 className="text-4xl font-bold">
+                <h2 className="text-4xl font-bold flex flex-row gap-2 items-center">
+                    <Icon icon="icon-park-twotone:setting-web"/>
                     Skills & Abilities
                 </h2>
             </div>

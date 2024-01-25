@@ -31,7 +31,7 @@ export default function AboutMe(){
                         className="h-4/6 w-2/6 rounded-lg drop-shadow-2xl cursor-pointer grayscale hover:grayscale-0"
                         width={200}
                         height={300}
-                        src="/Fitrie-casual.jpg"
+                        src="/fitrie-casual-2.jpg"
                         alt="avatar-image"
                     />
                 </div>
