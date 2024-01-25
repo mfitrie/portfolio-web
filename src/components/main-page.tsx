@@ -18,7 +18,7 @@ import { motion } from "framer-motion"
 
 export default function MainPage(){
     return (
-        <main className="h-screen grid grid-cols-2 relative xs:grid-cols-1 md:grid-cols-2">
+        <main id="home-page" className="h-screen grid grid-cols-2 relative xs:grid-cols-1 md:grid-cols-2">
             <ul className={styles.circles}>
                     <li></li>
                     <li></li>
@@ -39,7 +39,14 @@ export default function MainPage(){
                 </div>
                 <div>
                     <Button
-                        handleOnClick={() => {}}
+                        handleOnClick={() => {
+                            const e = document?.getElementById("about-me");
+                            e?.scrollIntoView({
+                                block: 'start',
+                                behavior: 'smooth',
+                                inline: 'start'
+                            });
+                        }}
                     >
                         About me!
                         <ArrowDown size="20"/>

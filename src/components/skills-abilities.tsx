@@ -5,14 +5,14 @@ import { motion } from "framer-motion"
 
 export default function SkillsAbilities(){
     return (
-        <div className="h-screen grid grid-row-6">
+        <section id="skills-abilities" className="grid grid-row-6 md:h-screen">
             <div className="row-span-1 flex justify-center items-center">
                 <h2 className="text-4xl font-bold">
                     Skills & Abilities
                 </h2>
             </div>
             <div className="row-span-5 p-4">
-                <div className="h-full p-4 grid grid-rows-5 border rounded-xl gap-5 bg-black/10">
+                <div className="p-4 grid grid-rows-5 border rounded-xl gap-5 bg-black/10">
                     <div className="grid gap-5 xs:grid-cols-2 md:grid-cols-6">
                         <div className="border rounded-xl w-full h-full flex flex-col gap-2 justify-center items-center text-white hover:shadow-2xl xs:py-2 md:py-0" style={{backgroundColor: "#192a56"}}>
                             <Icon icon="devicon:react" width={40}/>
@@ -145,6 +145,6 @@ export default function SkillsAbilities(){
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

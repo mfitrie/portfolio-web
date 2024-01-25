@@ -18,7 +18,7 @@ export default function AboutMe(){
     }
 
     return (
-        <div className="h-screen grid grid-rows-6">
+        <section id="about-me" className="h-screen grid grid-rows-6">
             <div className="row-span-1 flex justify-center items-center">
                 <h2 className="text-4xl font-bold flex gap-2">
                     <UserIcon size="40" hexColor="#000" /> 
@@ -59,6 +59,6 @@ export default function AboutMe(){
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
