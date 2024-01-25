@@ -5,6 +5,6 @@ export default function Container({
     children: React.ReactNode
 }){
     return (
-        <div className="container mx-auto px-4">{ children }</div>
+        <div className="mx-auto px-4 md:container">{ children }</div>
     )
 }
