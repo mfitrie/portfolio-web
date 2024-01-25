@@ -45,7 +45,7 @@ export default function AboutMe(){
                 </div>
                 <div className="px-8 flex flex-col justify-center gap-4">
                     <div>
-                        <p className="text-2xl font-bold">I'm Fitrie</p>
+                        <p className="text-2xl font-bold">I&apos;m Fitrie</p>
                         <p className="text-lg font-semibold">Full Stack Developer</p>
                     </div>
                     <div className="text-justify">
