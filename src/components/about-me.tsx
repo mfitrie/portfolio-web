@@ -25,16 +25,8 @@ export default function AboutMe(){
                     About Me
                 </h2>
             </div>
-            <div className="row-span-5 grid grid-cols-2">
-                <div className="flex justify-center items-center">
-                    {/* <p>Column one</p> */}
-                    {/* <img
-                        id="me-image"
-                        className="h-3/6 w-2/6 rounded-lg drop-shadow-2xl cursor-pointer grayscale hover:grayscale-0"
-                        // src="https://picsum.photos/seed/picsum/300/300"
-                        src="../../public/Fitrie-casual.jpg"
-                        alt="avatar-image"
-                    /> */}
+            <div className="row-span-5 grid grid-cols-2 xs:grid-cols-1 md:grid-cols-2">
+                <div className="flex justify-center items-center xs:hidden md:block">
                     <Image
                         className="h-4/6 w-2/6 rounded-lg drop-shadow-2xl cursor-pointer grayscale hover:grayscale-0"
                         width={200}
