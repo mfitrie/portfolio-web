@@ -9,6 +9,7 @@ import TwitterIcon from "./icons/twitter"
 import styles from '@/components/css/main-background.module.css';
 import TypewriterWord from "./typewriter-word"
 import Button from "./Button"
+import Image from "next/image"
 
 // _api.setFetch(fetch);
 
@@ -88,11 +89,15 @@ export default function MainPage(){
                         width="300"
                         height="300"
                     /> */}
-                    <img
-                        className="h-full w-full rounded-full drop-shadow-xl"
-                        src="https://picsum.photos/seed/picsum/300/300"
-                        alt="avatar-image"
-                    />
+                    <div className="w-96 h-96 rounded-full overflow-hidden drop-shadow-xl ">
+                        <Image
+                            className="object-cover w-full h-full"
+                            src="/Fitrie-casual.jpg"
+                            alt="avatar-image"
+                            width={721}
+                            height={1280}
+                        />
+                    </div>
                 </div>
             </div>
         </main>
