@@ -6,17 +6,6 @@ import ArrowRight from "./icons/arrow-right";
 import UserIcon from "./icons/user";
 
 export default function AboutMe(){
-
-    const downloadResume = () => {
-        const fileUrl = '/RESUME FITRIE.pdf';
-        const link = document.createElement('a');
-        link.href = fileUrl;
-        link.download = 'RESUME FITRIE';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
-
     return (
         <section id="about-me" className="h-screen grid grid-rows-6">
             <div className="row-span-1 flex justify-center items-center">
@@ -50,12 +39,6 @@ export default function AboutMe(){
                     <div>
                         <span className="text-blue-700">Place: </span>
                         <span>Klang, Malaysia - 41050</span>
-                    </div>
-                    <div className="mt-8">
-                        <Button handleOnClick={ downloadResume }>
-                            Resume 
-                            <ArrowRight size="20" hexColor="#fff"/>
-                        </Button>
                     </div>
                 </div>
             </div>

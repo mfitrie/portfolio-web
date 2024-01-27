@@ -66,10 +66,6 @@ export default function ContactPage(){
                         <span className="text-lg font-semibold ">Contact Info</span>
                         <div className="flex flex-col">
                             <span className="text-sm flex flex-row items-center gap-2">
-                                <Icon className="text-orange-500" icon="material-symbols:call" width="20"/>
-                                013-3527921
-                            </span>
-                            <span className="text-sm flex flex-row items-center gap-2">
                                 <Icon className="text-orange-500" icon="eva:email-outline" width="20"/>
                                 mfitrie78@gmail.com
                             </span>
