@@ -33,7 +33,7 @@ export default function AboutMe(){
                             <p className="text-lg font-semibold">Full Stack Developer</p>
                         </div>
                         <div className="text-justify">
-                            <p>I am a diligent and versatile professional with a profound aptitude for assimilating new skills. I possess a robust foundation in JavaScript, Node.js, TypeScript, Go, and design patterns, enabling me to proficiently develop resilient applications.</p>
+                            <p>A diligent and versatile professional with a profound aptitude for assimilating new skills. I possess a robust foundation in JavaScript, Node.js, TypeScript, Go, and design patterns, enabling me to proficiently develop resilient applications.</p>
                         </div>
                         <div>
                             <span className="text-blue-700">Email: </span>
