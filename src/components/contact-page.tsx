@@ -10,50 +10,8 @@ import TwitterIcon from "./icons/twitter"
 
 export default function ContactPage(){
     return (
-        <section id="contact-page" className="grid grid-rows-6 md:h-screen">
-            <div className="row-span-1 flex justify-center items-center">
-                <h2 className="text-4xl font-bold flex gap-2 items-center">
-                    <Icon icon="ri:shake-hands-line"/>
-                    Get In Touch
-                </h2>
-            </div>
-            <div className="row-span-4 grid rounded-lg shadow-xl m-5 xs:grid-cols-1 md:grid-cols-2">
-                <div className="flex justify-center items-center">
-                    <Image
-                        src="/developer-ilustration.jpg"
-                        width={400}
-                        height={400}
-                        alt="ilustration-image"
-                    />
-                </div>
-                <div className="flex flex-col gap-5 justify-center items-center">
-                    <div className="group relative w-72 md:w-80 lg:w-96">
-                        <label htmlFor="1" className="block w-full pb-1 text-sm font-bold text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-blue-400">Name</label>
-                        <input id="1" type="text" placeholder="Enter name" className="peer border border-gray-400 h-10 w-full rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-blue-400" />
-                    </div>
-                    <div className="group relative w-72 md:w-80 lg:w-96">
-                        <label htmlFor="2" className="block w-full pb-1 text-sm font-bold text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-blue-400">Email</label>
-                        <input id="2" type="text" placeholder="Enter email" className="peer border border-gray-400 h-10 w-full rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-blue-400" />
-                    </div>
-                    <div className="group relative w-72 md:w-80 lg:w-96">
-                        <label htmlFor="3" className="block w-full pb-1 text-sm font-bold text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-blue-400">Phone</label>
-                        <input id="3" type="text" placeholder="Enter phone number" className="peer border border-gray-400 h-10 w-full rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-blue-400" />
-                    </div>
-                    <div className="group relative w-72 md:w-80 lg:w-96">
-                        <label htmlFor="4" className="block w-full pb-1 text-sm font-bold text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-blue-400">Message</label>
-                        <textarea id="4" placeholder="Enter message" className="peer border border-gray-400 h-20 w-full rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-blue-400" />
-                    </div>
-                    <div>
-                        <Button
-                            handleOnClick={ () => {} }
-                        >
-                            <span>Submit</span>
-                            <Icon icon="mingcute:send-line"/>
-                        </Button>
-                    </div>
-                </div>
-            </div>
-            <div className="row-span-1 grid text-white xs:grid-cols-1 xs:gap-4 xs:py-4 md:grid-cols-2 md:py-2" style={{backgroundColor: "#192a56"}}>
+        <section id="contact-page">
+            <div className="grid text-white xs:grid-cols-1 xs:gap-4 xs:py-4 md:grid-cols-2 md:py-2" style={{backgroundColor: "#192a56"}}>
                 <div className="px-4 flex flex-col gap-4">
                     <span className="text-lg font-semibold ">Fitrie Portfolio</span>
                     <div className="flex flex-col">
