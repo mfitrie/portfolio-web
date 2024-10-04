@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portfolio-web-deployment
+  labels:
+    app: portfolio-web-deployment
+  namespace: portfolio
+spec:
+  selector:
+    matchLabels:
+      app: portfolio-web-deployment
+  replicas: 4
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: portfolio-web-deployment
+    spec:
+      containers:
+        - name: portfolio-web
+          image: hzkxh7gn0m/portfolio-web
+          ports:
+            - name: web
+              containerPort: 3000
+              protocol: TCP
+      # affinity:
+      #   podAntiAffinity:
+      #     preferredDuringSchedulingIgnoredDuringExecution:
+      #       - weight: 100
+      #         podAffinityTerm:
+      #           labelSelector:
+      #             matchExpressions:
+      #               - key: app
+      #                 operator: In
+      #                 values:
+      #                   - web
+      #           topologyKey: kubernetes.io/hostname

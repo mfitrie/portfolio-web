@@ -1,0 +1,38 @@
+services:
+  # # Development service
+  # dev:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #     target: development
+  #   volumes:
+  #     - .:/app
+  #     - /app/node_modules
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #     - NODE_ENV=development
+  #   command: npm run dev
+
+  # # Builder service
+  # builder:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #     target: builder
+  #   volumes:
+  #     - .:/app
+  #   command: npm run build
+
+  # Production service
+  prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    image: hzkxh7gn0m/portfolio-web:v1
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    command: npm start
