@@ -43,7 +43,7 @@ spec:
     spec:
       containers:
       - name: nextjs
-        image: my-nextjs-app:latest
+        image: portfolio-web:latest
         imagePullPolicy: Never
         ports:
         - containerPort: 3000
@@ -111,7 +111,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: nextjs.local
+  - host: portfolio-web 
     http:
       paths:
       - path: /
@@ -124,5 +124,5 @@ spec:
   # Uncomment for SSL/TLS
   # tls:
   # - hosts:
-  #   - nextjs.local
+  #   - portfolio-web 
   #   secretName: nextjs-tls
