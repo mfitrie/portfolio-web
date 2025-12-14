@@ -43,8 +43,7 @@ spec:
     spec:
       containers:
       - name: nextjs
-        image: portfolio-web:latest
-        imagePullPolicy: Never
+        image: hzkxh7gn0m/portfolio-web:latest
         ports:
         - containerPort: 3000
           name: http
