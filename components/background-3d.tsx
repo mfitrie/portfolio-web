@@ -19,14 +19,16 @@ function Model() {
 
         // Offset the model so its center is at the origin
         scene.position.x = -center.x
-        scene.position.y = 3
+        // scene.position.y = 3
+        scene.position.y = 1
         scene.position.z = -center.z
     }, [scene])
 
     return (
         <primitive
             object={scene}
-            scale={[1.5, -1.5, 1.5]} // x,y,z
+            // scale={[1.5, -1.5, 1.5]} // x,y,z
+            scale={[1.5, 1.5, 1.5]} // x,y,z
         />
     )
 }
@@ -38,8 +40,8 @@ export default function Background3d() {
                 {/* 3D Background Canvas */}
                 <Canvas
                     camera={{
-                        position: [0, 0, 5],
-                        fov: 50,
+                        position: [0, 0, 6],
+                        fov: 60,
                         near: 0.1,
                         far: 1000
                     }}
@@ -61,7 +63,8 @@ export default function Background3d() {
                             enableZoom={false}
                             enablePan={false}
                             autoRotate
-                            autoRotateSpeed={0.5}
+                            // autoRotateSpeed={0.5}
+                            autoRotateSpeed={10}
                             target={[0, 1.5, 0]}
                         />
                     </Suspense>

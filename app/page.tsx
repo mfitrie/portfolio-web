@@ -1,20 +1,21 @@
 "use client"
 
 import Background3d from "@/components/background-3d"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 
 export default function Home() {
   return (
     <div className="">
       <Background3d />
-      <div className="h-[30rem]">
+
+      {/* <div className="h-[30rem]">
         <Card>
-          {/* <CardHeader>
+          <CardHeader>
             <CardTitle>Card Title</CardTitle>
             <CardDescription>Card Description</CardDescription>
             <CardAction>Card Action</CardAction>
-          </CardHeader> */}
+          </CardHeader>
           <CardContent>
             <h1 className="scroll-m-20 text-left text-4xl font-extrabold tracking-tight text-balance text-white drop-shadow-lg">
               Hello, I'm Fitrie
@@ -24,12 +25,12 @@ export default function Home() {
               Let's connect and build something amazing together! Whether you're looking to collaborate on a project or just want to chat about tech, I'd love to hear from you.
             </span>
           </CardContent>
-          {/* <CardFooter>
+          <CardFooter>
             <p>Card Footer</p>
-          </CardFooter> */}
+          </CardFooter>
         </Card>
+      </div> */}
 
-      </div>
     </div>
   )
 }
