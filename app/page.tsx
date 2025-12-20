@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Facebook, Github, Linkedin, Sun } from "lucide-react"
+import { BriefcaseBusiness, Facebook, Github, Linkedin, Sun } from "lucide-react"
 
 
 export default function Home() {
@@ -96,6 +96,27 @@ export default function Home() {
         </Card>
       </div>
       {/*--------------------------------------Card 2--------------------------------------*/}
+
+      <div className="py-10">
+        <Card className="bg-white/10 backdrop-blur-xs border-0 w-80 h-80">
+          <CardHeader>
+            <CardTitle className="flex flex-row items-center gap-2">
+              <BriefcaseBusiness />
+              <span>Card Title</span>
+            </CardTitle>
+            {/* <CardDescription>Card Description</CardDescription> */}
+            <CardAction>
+              <Button className="cursor-pointer" variant="link">Hire Me</Button>
+            </CardAction>
+          </CardHeader>
+          <CardContent>
+            <p>Card Content</p>
+          </CardContent>
+          {/* //TODO: download resume */}
+          {/* <CardFooter>
+          </CardFooter> */}
+        </Card>
+      </div>
 
       <Footer />
     </div>
