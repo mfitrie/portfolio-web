@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Separator } from "@/components/ui/separator"
 import { BriefcaseBusiness, Facebook, Github, Linkedin, Sun } from "lucide-react"
 
 
@@ -16,7 +17,7 @@ export default function Home() {
       {/* --------------------------------------Card 1-------------------------------------- */}
       <div className="w-full grid grid-flow-row-dense grid-cols-1 justify-between gap-4 md:grid-cols-2">
         {/* //* Hi */}
-        <Card className="bg-white/10 backdrop-blur-xs border-0">
+        <Card className="bg-white/20 backdrop-blur-xs border-0">
           <CardContent>
             <div className="flex flex-col gap-2">
               <div className="flex flex-col gap-2">
@@ -38,7 +39,7 @@ export default function Home() {
                   Software Engineer, Freelancer, and Open Source Enthusiast.
                 </h3>
               </div>
-              <div className="flex flex-col gap-4">
+              <div className="text-muted-foreground flex flex-col gap-4">
                 <p>
                   I'm passionate about building tools that make developers' lives easier. When I'm not coding, you'll find me writing about my experiences and sharing what I've learned.
                 </p>
@@ -76,7 +77,7 @@ export default function Home() {
         </Card>
 
         {/* //* Work */}
-        <Card className="bg-white/10 backdrop-blur-xs border-0 ">
+        <Card className="bg-white/20 backdrop-blur-xs border-0 ">
           <CardHeader>
             <CardTitle className="flex flex-row items-center gap-2">
               <BriefcaseBusiness />
@@ -108,6 +109,9 @@ export default function Home() {
                   <p className="text-muted-foreground text-xs">2024 May -- Present</p>
                 </div>
               </div>
+
+              <Separator />
+
               <div className="grid grid-flow-row-dense grid-cols-12 items-center">
                 <div className="col-span-2 flex flex-col items-center">
                   <Avatar
@@ -138,24 +142,44 @@ export default function Home() {
       </div>
 
       {/*--------------------------------------Card 2--------------------------------------*/}
-      <div className="flex flex-row items-center justify-between">
-        <Card className="bg-white/10 backdrop-blur-xs border-0 w-80 h-80 rotate-2">
+      <div className="flex flex-col md:flex-row items-center justify-between">
+        <Card className="bg-white/20 backdrop-blur-xs border-0 w-80 h-80 rotate-2">
           <CardContent>
+            <img
+              src='/images/pic-1.jpg'
+              alt='Banner'
+              className='aspect-video h-70 rounded-t-xl object-cover'
+            />
           </CardContent>
         </Card>
 
-        <Card className="bg-white/10 backdrop-blur-xs border-0 w-80 h-80 -rotate-2">
+        <Card className="bg-white/20 backdrop-blur-xs border-0 w-80 h-80 -rotate-2">
           <CardContent>
+            <img
+              src='/images/pic-2.jpg'
+              alt='Banner'
+              className='aspect-video h-70 rounded-t-xl object-cover'
+            />
           </CardContent>
         </Card>
 
-        <Card className="bg-white/10 backdrop-blur-xs border-0 w-80 h-80 rotate-2">
+        <Card className="bg-white/20 backdrop-blur-xs border-0 w-80 h-80 rotate-2">
           <CardContent>
+            <img
+              src='/images/pic-3.jpg'
+              alt='Banner'
+              className='aspect-video h-70 rounded-t-xl object-cover'
+            />
           </CardContent>
         </Card>
 
-        <Card className="bg-white/10 backdrop-blur-xs border-0 w-80 h-80 -rotate-2">
+        <Card className="bg-white/20 backdrop-blur-xs border-0 w-80 h-80 -rotate-2">
           <CardContent>
+            <img
+              src='/images/pic-4.jpg'
+              alt='Banner'
+              className='aspect-video h-70 rounded-t-xl object-cover'
+            />
           </CardContent>
         </Card>
       </div>
