@@ -14,7 +14,7 @@ export default function Home() {
       <Background3d />
 
       {/* --------------------------------------Card 1-------------------------------------- */}
-      <div className="w-full md:w-1/2">
+      <div className="w-full lg:w-1/2">
         <Card className="bg-white/10 backdrop-blur-xs border-0">
           <CardContent>
             <div className="flex flex-col gap-2">
@@ -22,7 +22,10 @@ export default function Home() {
                 <Avatar
                   className="w-[3.5rem] h-[3.5rem]"
                 >
-                  <AvatarImage src="https://github.com/shadcn.png" />
+                  <AvatarImage
+                    src="/images/fitrie-image.jpg"
+                    className="object-cover"
+                  />
                   <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
                 <h1 className="scroll-m-20 text-left text-4xl font-extrabold tracking-tight text-balance drop-shadow-lg">
@@ -98,7 +101,7 @@ export default function Home() {
       {/*--------------------------------------Card 2--------------------------------------*/}
 
       <div className="py-10">
-        <Card className="bg-white/10 backdrop-blur-xs border-0 w-80 h-80">
+        <Card className="bg-white/10 backdrop-blur-xs border-0 w-100 h-100">
           <CardHeader>
             <CardTitle className="flex flex-row items-center gap-2">
               <BriefcaseBusiness />
@@ -113,8 +116,28 @@ export default function Home() {
             <p>Card Content</p>
           </CardContent>
           {/* //TODO: download resume */}
-          {/* <CardFooter>
-          </CardFooter> */}
+          <CardFooter>
+            <div className="grid grid-flow-row-dense grid-cols-12 items-center">
+              <div className="col-span-2 flex flex-col items-center">
+                <Avatar
+                  className="w-[2rem] h-[2rem] col-span-2"
+                >
+                  <AvatarImage
+                    src="/images/fitrie-image.jpg"
+                    className="object-cover"
+                  />
+                  <AvatarFallback>CN</AvatarFallback>
+                </Avatar>
+              </div>
+              <div className="flex flex-col justify-between col-span-6">
+                <p className="text-sm">Thunderquote</p>
+                <p className="text-muted-foreground text-sm">Software Developer</p>
+              </div>
+              <div className="col-span-4">
+                <p className="text-muted-foreground text-xs">2024 May -- Present</p>
+              </div>
+            </div>
+          </CardFooter>
         </Card>
       </div>
 
