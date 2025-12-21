@@ -14,7 +14,8 @@ export default function Home() {
       <Background3d />
 
       {/* --------------------------------------Card 1-------------------------------------- */}
-      <div className="w-full lg:w-1/2">
+      <div className="w-full grid grid-flow-row-dense grid-cols-1 justify-between gap-4 md:grid-cols-2">
+        {/* //* Hi */}
         <Card className="bg-white/10 backdrop-blur-xs border-0">
           <CardContent>
             <div className="flex flex-col gap-2">
@@ -37,7 +38,7 @@ export default function Home() {
                   Software Engineer, Freelancer, and Open Source Enthusiast.
                 </h3>
               </div>
-              <div>
+              <div className="flex flex-col gap-4">
                 <p>
                   I'm passionate about building tools that make developers' lives easier. When I'm not coding, you'll find me writing about my experiences and sharing what I've learned.
                 </p>
@@ -73,6 +74,66 @@ export default function Home() {
             </div>
           </CardFooter>
         </Card>
+
+        {/* //* Work */}
+        <Card className="bg-white/10 backdrop-blur-xs border-0 ">
+          <CardHeader>
+            <CardTitle className="flex flex-row items-center gap-2">
+              <BriefcaseBusiness />
+              <span>Work</span>
+            </CardTitle>
+            <CardAction>
+              <Button className="cursor-pointer" variant="link">Hire Me</Button>
+            </CardAction>
+          </CardHeader>
+          <CardContent>
+            <div className="flex flex-col gap-3">
+              <div className="grid grid-flow-row-dense grid-cols-12 items-center">
+                <div className="col-span-2 flex flex-col items-center">
+                  <Avatar
+                    className="w-[2.5rem] h-[2.5rem] col-span-2"
+                  >
+                    <AvatarImage
+                      src="/images/fitrie-image.jpg"
+                      className="object-cover"
+                    />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                </div>
+                <div className="flex flex-col justify-between col-span-6">
+                  <p className="text-sm">Siaga Labs</p>
+                  <p className="text-muted-foreground text-sm">Fullstack Developer</p>
+                </div>
+                <div className="col-span-4">
+                  <p className="text-muted-foreground text-xs">2024 May -- Present</p>
+                </div>
+              </div>
+              <div className="grid grid-flow-row-dense grid-cols-12 items-center">
+                <div className="col-span-2 flex flex-col items-center">
+                  <Avatar
+                    className="w-[2.5rem] h-[2.5rem] col-span-2"
+                  >
+                    <AvatarImage
+                      src="/images/fitrie-image.jpg"
+                      className="object-cover"
+                    />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                </div>
+                <div className="flex flex-col justify-between col-span-6">
+                  <p className="text-sm">Thunderquote</p>
+                  <p className="text-muted-foreground text-sm">Fullstack Developer</p>
+                </div>
+                <div className="col-span-4">
+                  <p className="text-muted-foreground text-xs">2023 Sept -- 2024 Mar</p>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+          <CardFooter>
+            {/* //TODO: download resume */}
+          </CardFooter>
+        </Card>
         {/*--------------------------------------Card 1--------------------------------------*/}
       </div>
 
@@ -100,46 +161,6 @@ export default function Home() {
       </div>
       {/*--------------------------------------Card 2--------------------------------------*/}
 
-      <div className="py-10">
-        <Card className="bg-white/10 backdrop-blur-xs border-0 w-100 h-100">
-          <CardHeader>
-            <CardTitle className="flex flex-row items-center gap-2">
-              <BriefcaseBusiness />
-              <span>Card Title</span>
-            </CardTitle>
-            {/* <CardDescription>Card Description</CardDescription> */}
-            <CardAction>
-              <Button className="cursor-pointer" variant="link">Hire Me</Button>
-            </CardAction>
-          </CardHeader>
-          <CardContent>
-            <p>Card Content</p>
-          </CardContent>
-          {/* //TODO: download resume */}
-          <CardFooter>
-            <div className="grid grid-flow-row-dense grid-cols-12 items-center">
-              <div className="col-span-2 flex flex-col items-center">
-                <Avatar
-                  className="w-[2rem] h-[2rem] col-span-2"
-                >
-                  <AvatarImage
-                    src="/images/fitrie-image.jpg"
-                    className="object-cover"
-                  />
-                  <AvatarFallback>CN</AvatarFallback>
-                </Avatar>
-              </div>
-              <div className="flex flex-col justify-between col-span-6">
-                <p className="text-sm">Thunderquote</p>
-                <p className="text-muted-foreground text-sm">Software Developer</p>
-              </div>
-              <div className="col-span-4">
-                <p className="text-muted-foreground text-xs">2024 May -- Present</p>
-              </div>
-            </div>
-          </CardFooter>
-        </Card>
-      </div>
 
       <Footer />
     </div>

@@ -16,10 +16,16 @@ export function Footer() {
                             About
                         </a>
                         <a href="/projects" className="hover:text-foreground transition-colors">
+                            Hire
+                        </a>
+                        <a href="/contact" className="hover:text-foreground transition-colors">
+                            Blog
+                        </a>
+                        <a href="/contact" className="hover:text-foreground transition-colors">
                             Projects
                         </a>
                         <a href="/contact" className="hover:text-foreground transition-colors">
-                            Contact
+                            Uses
                         </a>
                     </div>
                 </div>
