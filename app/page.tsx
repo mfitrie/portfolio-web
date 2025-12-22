@@ -55,6 +55,9 @@ export default function Home() {
                 className="cursor-pointer"
                 variant="outline"
                 size="icon"
+                onClick={() => {
+                  window.open("https://www.linkedin.com/in/muhammad-fitrie-a88472199", '_blank');
+                }}
               >
                 <Linkedin />
               </Button>
@@ -62,6 +65,9 @@ export default function Home() {
                 className="cursor-pointer"
                 variant="outline"
                 size="icon"
+                onClick={() => {
+                  window.open("https://github.com/mfitrie", '_blank');
+                }}
               >
                 <Github />
               </Button>
@@ -69,6 +75,9 @@ export default function Home() {
                 className="cursor-pointer"
                 variant="outline"
                 size="icon"
+                onClick={() => {
+                  window.open("https://www.facebook.com/muhammad.fitrie.176208", '_blank');
+                }}
               >
                 <Facebook />
               </Button>
@@ -151,7 +160,7 @@ export default function Home() {
               className='w-full h-full rounded-xl object-cover transition-transform duration-100 group-hover:scale-110'
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl">
-              <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">GROW</h4>
+              <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">CREATE</h4>
             </div>
           </CardContent>
         </Card>
@@ -164,7 +173,7 @@ export default function Home() {
               className='w-full h-full rounded-xl object-cover transition-transform duration-100 group-hover:scale-110'
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl">
-              <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">GROW</h4>
+              <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">INNOVATE</h4>
             </div>
           </CardContent>
         </Card>
@@ -177,7 +186,7 @@ export default function Home() {
               className='w-full h-full rounded-xl object-cover transition-transform duration-100 group-hover:scale-110'
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl">
-              <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">GROW</h4>
+              <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">INSPIRE</h4>
             </div>
           </CardContent>
         </Card>
