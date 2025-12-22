@@ -95,7 +95,7 @@ export default function Home() {
                     className="w-[2.5rem] h-[2.5rem] col-span-2"
                   >
                     <AvatarImage
-                      src="/images/fitrie-image.jpg"
+                      src="/images/logo/siagalabs.jpg"
                       className="object-cover"
                     />
                     <AvatarFallback>CN</AvatarFallback>
@@ -118,7 +118,7 @@ export default function Home() {
                     className="w-[2.5rem] h-[2.5rem] col-span-2"
                   >
                     <AvatarImage
-                      src="/images/fitrie-image.jpg"
+                      src="/images/logo/thunderquote_logo.jpg"
                       className="object-cover"
                     />
                     <AvatarFallback>CN</AvatarFallback>
@@ -142,46 +142,59 @@ export default function Home() {
       </div>
 
       {/*--------------------------------------Card 2--------------------------------------*/}
-      <div className="flex flex-col md:flex-row items-center justify-between">
-        <Card className="bg-white/20 backdrop-blur-xs border-0 w-80 h-80 rotate-2">
-          <CardContent>
+      <div className="flex flex-col items-center justify-between gap-8 md:flex-row md:gap-0">
+        <Card className="bg-white/20 backdrop-blur-xs border-0 w-80 h-80 -rotate-2 p-0 group transition-all duration-300 cursor-pointer hover:rotate-0 hover:scale-105">
+          <CardContent className="px-0 relative h-full overflow-hidden rounded-xl">
             <img
               src='/images/pic-1.jpg'
               alt='Banner'
-              className='aspect-video h-70 rounded-t-xl object-cover'
+              className='w-full h-full rounded-xl object-cover transition-transform duration-100 group-hover:scale-110'
             />
+            <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl">
+              <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">GROW</h4>
+            </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-white/20 backdrop-blur-xs border-0 w-80 h-80 -rotate-2">
-          <CardContent>
+        <Card className="bg-white/20 backdrop-blur-xs border-0 w-80 h-80 -rotate-2 p-0 group transition-all duration-300 cursor-pointer hover:rotate-0 hover:scale-105">
+          <CardContent className="px-0 relative h-full overflow-hidden rounded-xl">
             <img
               src='/images/pic-2.jpg'
               alt='Banner'
-              className='aspect-video h-70 rounded-t-xl object-cover'
+              className='w-full h-full rounded-xl object-cover transition-transform duration-100 group-hover:scale-110'
             />
+            <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl">
+              <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">GROW</h4>
+            </div>
           </CardContent>
         </Card>
-
-        <Card className="bg-white/20 backdrop-blur-xs border-0 w-80 h-80 rotate-2">
-          <CardContent>
+        
+        <Card className="bg-white/20 backdrop-blur-xs border-0 w-80 h-80 -rotate-2 p-0 group transition-all duration-300 cursor-pointer hover:rotate-0 hover:scale-105">
+          <CardContent className="px-0 relative h-full overflow-hidden rounded-xl">
             <img
               src='/images/pic-3.jpg'
               alt='Banner'
-              className='aspect-video h-70 rounded-t-xl object-cover'
+              className='w-full h-full rounded-xl object-cover transition-transform duration-100 group-hover:scale-110'
             />
+            <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl">
+              <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">GROW</h4>
+            </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-white/20 backdrop-blur-xs border-0 w-80 h-80 -rotate-2">
-          <CardContent>
+        <Card className="bg-white/20 backdrop-blur-xs border-0 w-80 h-80 -rotate-2 p-0 group transition-all duration-300 cursor-pointer hover:rotate-0 hover:scale-105">
+          <CardContent className="px-0 relative h-full overflow-hidden rounded-xl">
             <img
               src='/images/pic-4.jpg'
               alt='Banner'
-              className='aspect-video h-70 rounded-t-xl object-cover'
+              className='w-full h-full rounded-xl object-cover transition-transform duration-100 group-hover:scale-110'
             />
+            <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl">
+              <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">GROW</h4>
+            </div>
           </CardContent>
         </Card>
+
       </div>
       {/*--------------------------------------Card 2--------------------------------------*/}
 
